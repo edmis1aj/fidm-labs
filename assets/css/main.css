@@ -1,3 +1,18 @@
+
+body {
+    background: linear-gradient(135deg, #6a0032, #4b0026);
+    color: white;
+}
+
+
+#nav a.active, #nav a:hover {
+    color: #ffcb05 !important;
+}
+.panel.active {
+    background-color: #ffcb05 !important;
+    color: #000 !important;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("fontawesome-all.min.css");
 
