@@ -1,145 +1,259 @@
 <!DOCTYPE HTML>
 <!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Astral by HTML5 UP (modified for FIDM Labs)
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license
 -->
 <html>
-	<head>
-		<title>Astral by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>FIDM Labs</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Core styles -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Font Awesome (bundled with template) -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+    <!-- Minimal inline tweaks requested: CMU maroon gradient + gold active states -->
+    <style>
+      /* Background gradient */
+      body {
+        background: linear-gradient(135deg, #6a0032, #4b0026);
+        color: white;
+      }
+      /* Active/hover icon color */
+      #nav a:hover,
+      #nav a.active {
+        color: #ffcb05 !important; /* CMU gold */
+      }
+      /* Active panel background */
+      .panel.active {
+        background-color: #ffcb05 !important; /* CMU gold */
+        color: #000 !important;
+      }
+      /* Simple team grid */
+      .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .team-card {
+        flex: 1 1 30%;
+        max-width: 240px;
+        text-align: center;
+      }
+      .team-card img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 0.75rem;
+      }
+      .team-card p {
+        margin: 0;
+        font-weight: 600;
+      }
+      @media (max-width: 768px) {
+        .team-card { flex: 1 1 45%; }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
 
-				<!-- Nav -->
-					
-<nav id="nav">
-    <a href="#home" class="icon fa-solid fa-home"><span>Home</span></a>
-    <a href="#labs" class="icon fa-solid fa-cube"><span>Labs</span></a>
-    <a href="#services" class="icon fa-solid fa-user-gear"><span>Services</span></a>
-    <a href="#tutorials" class="icon fa-solid fa-chalkboard-user"><span>Tutorials</span></a>
-    <a href="#employment" class="icon fa-solid fa-id-badge"><span>Employment</span></a>
-</nav>
+    <!-- Wrapper -->
+    <div id="wrapper">
 
+      <!-- Nav -->
+      <nav id="nav">
+        <a href="#home" class="icon solid fa-home"><span>Home</span></a>
+        <a href="#labs" class="icon solid fa-cube"><span>Labs</span></a>
+        <a href="#services" class="icon solid fa-user-cog"><span>Services</span></a>
+        <a href="#tutorials" class="icon solid fa-chalkboard-teacher"><span>Tutorials</span></a>
+        <a href="#employment" class="icon solid fa-id-badge"><span>Employment</span></a>
+      </nav>
 
-				<!-- Main -->
-					<div id="main">
+      <!-- Main -->
+      <div id="main">
 
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>Jane Doe</h1>
-									<p>Senior Astral Projectionist</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
-								</a>
-							</article>
+        <!-- Home -->
+        <article id="home" class="panel intro">
+          <header>
+            <h1>FIDM Labs</h1>
+            <p>Empowering creativity and innovation in Fashion, Interior Design &amp; Merchandising at Central Michigan University.</p>
+          </header>
 
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>Work</h2>
-								</header>
-								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
-								</p>
-								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
-									</div>
-								</section>
-							</article>
+          <!-- Meet the Team -->
+          <section style="margin-top: 3rem;">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+              <div class="team-card">
+                <img src="https://via.placeholder.com/300x300.png?text=Team+1" alt="Team Member 1" />
+                <p>Filler Name 1</p>
+              </div>
+              <div class="team-card">
+                <img src="https://via.placeholder.com/300x300.png?text=Team+2" alt="Team Member 2" />
+                <p>Filler Name 2</p>
+              </div>
+              <div class="team-card">
+                <img src="https://via.placeholder.com/300x300.png?text=Team+3" alt="Team Member 3" />
+                <p>Filler Name 3</p>
+              </div>
+              <div class="team-card">
+                <img src="https://via.placeholder.com/300x300.png?text=Team+4" alt="Team Member 4" />
+                <p>Filler Name 4</p>
+              </div>
+              <div class="team-card">
+                <img src="https://via.placeholder.com/300x300.png?text=Team+5" alt="Team Member 5" />
+                <p>Filler Name 5</p>
+              </div>
+              <div class="team-card">
+                <img src="https://via.placeholder.com/300x300.png?text=Team+6" alt="Team Member 6" />
+                <p>Filler Name 6</p>
+              </div>
+            </div>
+          </section>
+        </article>
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
+        <!-- Labs -->
+        <article id="labs" class="panel">
+          <header>
+            <h2>Our Labs</h2>
+            <p>Explore our lab spaces and the equipment available in each.</p>
+          </header>
 
-					</div>
+          <section>
+            <h3>Sewing Lab</h3>
+            <ul>
+              <li>Industrial Sewing Machines</li>
+              <li>Industrial Surgers</li>
+              <li>Home Sewing Machines</li>
+              <li>Home Surgers</li>
+              <li>Dress Forms</li>
+              <li>Irons</li>
+              <li>Ironing Boards</li>
+              <li>Self-Healing Cutting Mats</li>
+            </ul>
+          </section>
 
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
+          <section>
+            <h3>Innovation Studio</h3>
+            <ul>
+              <li>DesignJet Z6600 Poster Printer</li>
+              <li>MakerBot Sketch Large 3D Printers</li>
+              <li>Ultimaker S7 3D Printer</li>
+              <li>MetaQuest3 VR Headsets</li>
+              <li>Einscan Pro HD 3D Scanner</li>
+              <li>LitEnergy A3 Tracing Light Boxes</li>
+            </ul>
+          </section>
 
-			</div>
+          <section>
+            <h3>FMD CAD Lab</h3>
+            <ul>
+              <li>PC Workstations</li>
+              <li>Adobe Creative Cloud Software</li>
+              <li>Lectra Kaledo Software</li>
+              <li>SketchUp 2025</li>
+              <li>Rhino Software</li>
+              <li>Wacom Intuos4 PTK-840 Graphics Tablets</li>
+            </ul>
+          </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+          <section>
+            <h3>Visual Merchandising Lab</h3>
+            <ul>
+              <li>Mannequins</li>
+              <li>Circuit Printer</li>
+              <li>12 PC Laptops</li>
+              <li>SketchUp 2025</li>
+              <li>Rhino Software</li>
+              <li>3 iPad Air 11-in. (M3)</li>
+            </ul>
+          </section>
+        </article>
 
-	</body>
+        <!-- Services -->
+        <article id="services" class="panel">
+          <header>
+            <h2>Services</h2>
+            <p>Support for your creative and academic projects.</p>
+          </header>
+
+          <section>
+            <h3>Lab Reservations</h3>
+            <p>Reserve time in the Innovation Studio:</p>
+            <script src="https://embed.ycb.me" async="true"
+              data-domain="innovationstudio"
+              data-type="button-floating"
+              data-innertext="Innovation Studio"
+              data-buttonicon="calendar"
+              data-buttonposition="bottomRight"
+              data-buttoncolor="#6A0032"
+              data-displaymode="auto"></script>
+          </section>
+
+          <section>
+            <h3>Online Forms</h3>
+            <ul>
+              <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UOE9JUVNQMzVHWTY4V0tTVzJWMko5WFYwSi4u" target="_blank" rel="noopener">Equipment Checkout Request</a></li>
+              <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UQzE1QTlVRDhVQzE0UTQxUVdQSVVFTjdENi4u" target="_blank" rel="noopener">3D Printing Request</a></li>
+              <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UNDRQMTFJTlRQNFlIQTZTM1Y2NU4xNjJJTS4u" target="_blank" rel="noopener">Poster Printing Request</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Lab Maintenance Requests</h3>
+            <ul>
+              <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UQ1JXWFZQUTRSVUNIUVVIR01MNzJSMFJaMC4u" target="_blank" rel="noopener">Sewing Lab</a></li>
+              <li>FMD CAD Lab</li>
+              <li>Textile Lab</li>
+              <li>Visual Merchandising Lab</li>
+              <li>Innovation Studio</li>
+              <li>IND Lab</li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Tutorials -->
+        <article id="tutorials" class="panel">
+          <header>
+            <h2>Tutorials</h2>
+            <p>Coming soon: tutorials and walkthroughs for lab equipment, software, and workflows.</p>
+          </header>
+        </article>
+
+        <!-- Employment -->
+        <article id="employment" class="panel">
+          <header>
+            <h2>Employment</h2>
+            <p>Learn how to become a student lab assistant and support innovation across FIDM.</p>
+          </header>
+          <section>
+            <p>Applications and position details will be available here soon.</p>
+          </section>
+        </article>
+
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <ul class="copyright">
+          <li>&copy; Central Michigan University — FIDM.</li>
+          <li>Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
