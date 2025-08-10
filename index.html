@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-  Astral by HTML5 UP (modified for FIDM Labs)
+  Astral by HTML5 UP (customized for FIDM Labs)
   html5up.net | @ajlkn
   Free for personal and commercial use under the CCA 3.0 license
 -->
@@ -9,58 +9,12 @@
     <title>FIDM Labs</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
     <!-- Core styles -->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- Font Awesome (bundled with template) -->
+    <!-- Font Awesome that ships with Astral -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-    <!-- Minimal inline tweaks requested: CMU maroon gradient + gold active states -->
-    <style>
-      /* Background gradient */
-      body {
-        background: linear-gradient(135deg, #6a0032, #4b0026);
-        color: black;
-      }
-      /* Active/hover icon color */
-      #nav a:hover,
-      #nav a.active {
-        color: #ffcb05 !important; /* CMU gold */
-      }
-      /* Active panel background */
-      .panel.active {
-        background-color: #ffcb05 !important; /* CMU gold */
-        color: #000 !important;
-      }
-      /* Simple team grid */
-      .team-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 2rem;
-        margin-top: 2rem;
-      }
-      .team-card {
-        flex: 1 1 30%;
-        max-width: 240px;
-        text-align: center;
-      }
-      .team-card img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto 0.75rem;
-      }
-      .team-card p {
-        margin: 0;
-        font-weight: 600;
-      }
-      @media (max-width: 768px) {
-        .team-card { flex: 1 1 45%; }
-      }
-    </style>
   </head>
   <body class="is-preload">
 
@@ -80,42 +34,53 @@
       <div id="main">
 
         <!-- Home -->
-        <article id="home" class="panel intro">
-          <header>
-            <h1>FIDM Labs</h1>
-            <p>Empowering creativity and innovation in Fashion, Interior Design &amp; Merchandising at Central Michigan University.</p>
-          </header>
-
-          <!-- Meet the Team -->
-          <section style="margin-top: 3rem;">
-            <h2>Meet the Team</h2>
-            <div class="team-grid">
-              <div class="team-card">
-                <img src="https://via.placeholder.com/300x300.png?text=Team+1" alt="Team Member 1" />
-                <p>Filler Name 1</p>
-              </div>
-              <div class="team-card">
-                <img src="https://via.placeholder.com/300x300.png?text=Team+2" alt="Team Member 2" />
-                <p>Filler Name 2</p>
-              </div>
-              <div class="team-card">
-                <img src="https://via.placeholder.com/300x300.png?text=Team+3" alt="Team Member 3" />
-                <p>Filler Name 3</p>
-              </div>
-              <div class="team-card">
-                <img src="https://via.placeholder.com/300x300.png?text=Team+4" alt="Team Member 4" />
-                <p>Filler Name 4</p>
-              </div>
-              <div class="team-card">
-                <img src="https://via.placeholder.com/300x300.png?text=Team+5" alt="Team Member 5" />
-                <p>Filler Name 5</p>
-              </div>
-              <div class="team-card">
-                <img src="https://via.placeholder.com/300x300.png?text=Team+6" alt="Team Member 6" />
-                <p>Filler Name 6</p>
-              </div>
+        <article id="home" class="panel intro fidm-hero">
+          <header class="hero-grid">
+            <div class="hero-copy">
+              <h1 class="hero-title">FIDM Labs</h1>
+              <p class="hero-sub">
+                Empowering creativity and innovation in Fashion, Interior Design &amp; Merchandising at Central Michigan University.
+              </p>
+              <div class="hr-gold" aria-hidden="true"></div>
             </div>
-          </section>
+
+            <!-- Meet the Team -->
+            <section class="team">
+              <h2 class="team-heading">Meet the Team</h2>
+              <div class="team-grid">
+                <div class="team-card">
+                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 1">
+                  <div class="team-name">Filler Name 1</div>
+                  <div class="team-role">Team Member</div>
+                </div>
+                <div class="team-card">
+                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 2">
+                  <div class="team-name">Filler Name 2</div>
+                  <div class="team-role">Team Member</div>
+                </div>
+                <div class="team-card">
+                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 3">
+                  <div class="team-name">Filler Name 3</div>
+                  <div class="team-role">Team Member</div>
+                </div>
+                <div class="team-card">
+                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 4">
+                  <div class="team-name">Filler Name 4</div>
+                  <div class="team-role">Team Member</div>
+                </div>
+                <div class="team-card">
+                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 5">
+                  <div class="team-name">Filler Name 5</div>
+                  <div class="team-role">Team Member</div>
+                </div>
+                <div class="team-card">
+                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 6">
+                  <div class="team-name">Filler Name 6</div>
+                  <div class="team-role">Team Member</div>
+                </div>
+              </div>
+            </section>
+          </header>
         </article>
 
         <!-- Labs -->
@@ -123,57 +88,60 @@
           <header>
             <h2>Our Labs</h2>
             <p>Explore our lab spaces and the equipment available in each.</p>
+            <div class="hr-gold" aria-hidden="true"></div>
           </header>
 
-          <section>
-            <h3>Sewing Lab</h3>
-            <ul>
-              <li>Industrial Sewing Machines</li>
-              <li>Industrial Surgers</li>
-              <li>Home Sewing Machines</li>
-              <li>Home Surgers</li>
-              <li>Dress Forms</li>
-              <li>Irons</li>
-              <li>Ironing Boards</li>
-              <li>Self-Healing Cutting Mats</li>
-            </ul>
-          </section>
+          <div class="two-col has-divider">
+            <section>
+              <h3>Sewing Lab</h3>
+              <ul>
+                <li>Industrial Sewing Machines</li>
+                <li>Industrial Surgers</li>
+                <li>Home Sewing Machines</li>
+                <li>Home Surgers</li>
+                <li>Dress Forms</li>
+                <li>Irons</li>
+                <li>Ironing Boards</li>
+                <li>Self-Healing Cutting Mats</li>
+              </ul>
 
-          <section>
-            <h3>Innovation Studio</h3>
-            <ul>
-              <li>DesignJet Z6600 Poster Printer</li>
-              <li>MakerBot Sketch Large 3D Printers</li>
-              <li>Ultimaker S7 3D Printer</li>
-              <li>MetaQuest3 VR Headsets</li>
-              <li>Einscan Pro HD 3D Scanner</li>
-              <li>LitEnergy A3 Tracing Light Boxes</li>
-            </ul>
-          </section>
+              <section>
+                <h3>FMD CAD Lab</h3>
+                <ul>
+                  <li>PC Workstations</li>
+                  <li>Adobe Creative Cloud Software</li>
+                  <li>Lectra Kaledo Software</li>
+                  <li>SketchUp 2025</li>
+                  <li>Rhino Software</li>
+                  <li>Wacom Intuos4 PTK-840 Graphics Tablets</li>
+                </ul>
+              </section>
+            </section>
 
-          <section>
-            <h3>FMD CAD Lab</h3>
-            <ul>
-              <li>PC Workstations</li>
-              <li>Adobe Creative Cloud Software</li>
-              <li>Lectra Kaledo Software</li>
-              <li>SketchUp 2025</li>
-              <li>Rhino Software</li>
-              <li>Wacom Intuos4 PTK-840 Graphics Tablets</li>
-            </ul>
-          </section>
+            <section>
+              <h3>Innovation Studio</h3>
+              <ul>
+                <li>DesignJet Z6600 Poster Printer</li>
+                <li>MakerBot Sketch Large 3D Printers</li>
+                <li>Ultimaker S7 3D Printer</li>
+                <li>MetaQuest3 VR Headsets</li>
+                <li>Einscan Pro HD 3D Scanner</li>
+                <li>LitEnergy A3 Tracing Light Boxes</li>
+              </ul>
 
-          <section>
-            <h3>Visual Merchandising Lab</h3>
-            <ul>
-              <li>Mannequins</li>
-              <li>Circuit Printer</li>
-              <li>12 PC Laptops</li>
-              <li>SketchUp 2025</li>
-              <li>Rhino Software</li>
-              <li>3 iPad Air 11-in. (M3)</li>
-            </ul>
-          </section>
+              <section>
+                <h3>Visual Merchandising Lab</h3>
+                <ul>
+                  <li>Mannequins</li>
+                  <li>Circuit Printer</li>
+                  <li>12 PC Laptops</li>
+                  <li>SketchUp 2025</li>
+                  <li>Rhino Software</li>
+                  <li>3 iPad Air 11-in. (M3)</li>
+                </ul>
+              </section>
+            </section>
+          </div>
         </article>
 
         <!-- Services -->
@@ -181,40 +149,41 @@
           <header>
             <h2>Services</h2>
             <p>Support for your creative and academic projects.</p>
+            <div class="hr-gold" aria-hidden="true"></div>
           </header>
 
-          <section>
-            <h3>Lab Reservations</h3>
-            <p>Reserve time in the Innovation Studio:</p>
-            <script src="https://embed.ycb.me" async="true"
-              data-domain="innovationstudio"
-              data-type="button-floating"
-              data-innertext="Innovation Studio"
-              data-buttonicon="calendar"
-              data-buttonposition="bottomRight"
-              data-buttoncolor="#6A0032"
-              data-displaymode="auto"></script>
-          </section>
+          <div class="two-col has-divider">
+            <section>
+              <h3>Lab Reservations</h3>
+              <p>Reserve time in the Innovation Studio:</p>
+              <!-- Inline booking button (harmonized colors + label) -->
+              <script src="https://embed.ycb.me"
+                async="true"
+                data-domain="innovationstudio"
+                data-type="button-link"
+                data-innertext="Book Here"
+                data-buttoncolor="#6A0032"
+                data-displaymode="auto"></script>
+              <!-- Fallback if script blocked -->
+              <noscript><a class="fidm-inline-button" href="#" aria-disabled="true">Book Here</a></noscript>
+            </section>
 
-          <section>
-            <h3>Online Forms</h3>
-            <ul>
-              <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UOE9JUVNQMzVHWTY4V0tTVzJWMko5WFYwSi4u" target="_blank" rel="noopener">Equipment Checkout</a></li>
-              <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UQzE1QTlVRDhVQzE0UTQxUVdQSVVFTjdENi4u" target="_blank" rel="noopener">3D Printing</a></li>
-              <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UNDRQMTFJTlRQNFlIQTZTM1Y2NU4xNjJJTS4u" target="_blank" rel="noopener">Poster Printing</a></li>
-            </ul>
-          </section>
+            <section>
+              <h3>Online Forms</h3>
+              <ul>
+                <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UOE9JUVNQMzVHWTY4V0tTVzJWMko5WFYwSi4u" target="_blank" rel="noopener">Equipment Checkout Request</a></li>
+                <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UQzE1QTlVRDhVQzE0UTQxUVdQSVVFTjdENi4u" target="_blank" rel="noopener">3D Printing Request</a></li>
+                <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UNDRQMTFJTlRQNFlIQTZTM1Y2NU4xNjJJTS4u" target="_blank" rel="noopener">Poster Printing Request</a></li>
+              </ul>
+            </section>
+          </div>
 
-          <section>
+          <section class="center" style="margin-top: 1.75rem;">
             <h3>Lab Maintenance Requests</h3>
-            <ul>
-              <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UQ1JXWFZQUTRSVUNIUVVIR01MNzJSMFJaMC4u" target="_blank" rel="noopener">Sewing Lab</a></li>
-              <li>FMD CAD Lab</li>
-              <li>Textile Lab</li>
-              <li>Visual Merchandising Lab</li>
-              <li>Innovation Studio</li>
-              <li>IND Lab</li>
-            </ul>
+            <p>
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=brxxyMZ8V0qk6yIwn8NJYyrvW1AyGz9MiWAMny9oRd5UQ1JXWFZQUTRSVUNIUVVIR01MNzJSMFJaMC4u" target="_blank" rel="noopener">Sewing Lab</a>
+              <!-- Add more lab links here when ready -->
+            </p>
           </section>
         </article>
 
@@ -223,7 +192,18 @@
           <header>
             <h2>Tutorials</h2>
             <p>Coming soon: tutorials and walkthroughs for lab equipment, software, and workflows.</p>
+            <div class="hr-gold" aria-hidden="true"></div>
           </header>
+          <div class="two-col has-divider">
+            <section>
+              <h3>Category A</h3>
+              <p>Placeholder for future content.</p>
+            </section>
+            <section>
+              <h3>Category B</h3>
+              <p>Placeholder for future content.</p>
+            </section>
+          </div>
         </article>
 
         <!-- Employment -->
@@ -231,6 +211,7 @@
           <header>
             <h2>Employment</h2>
             <p>Learn how to become a student lab assistant and support innovation across FIDM.</p>
+            <div class="hr-gold" aria-hidden="true"></div>
           </header>
           <section>
             <p>Applications and position details will be available here soon.</p>
