@@ -33,55 +33,114 @@
       <!-- Main -->
       <div id="main">
 
-        <!-- Home -->
-        <article id="home" class="panel intro fidm-hero">
-          <header class="hero-grid">
-            <div class="hero-copy">
-              <h1 class="hero-title">FIDM Labs</h1>
-              <p class="hero-sub">
-                Empowering creativity and innovation in Fashion, Interior Design &amp; Merchandising at Central Michigan University.
-              </p>
-              <div class="hr-gold" aria-hidden="true"></div>
-            </div>
+        <!-- HOME SECTION -->
+<section id="home">
+  <div class="content-box">
+    <h1 class="section-title">FIDM Labs</h1>
+    <p class="section-subtitle">
+      Empowering creativity and innovation in Fashion, Interior Design &amp; Merchandising at Central Michigan University.
+    </p>
+    <hr class="gold-divider">
+    <h2 class="subsection-title">Meet the Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="photo-placeholder"></div>
+        <h3>Filler Name 1</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-member">
+        <div class="photo-placeholder"></div>
+        <h3>Filler Name 2</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-member">
+        <div class="photo-placeholder"></div>
+        <h3>Filler Name 3</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-member">
+        <div class="photo-placeholder"></div>
+        <h3>Filler Name 4</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-member">
+        <div class="photo-placeholder"></div>
+        <h3>Filler Name 5</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-member">
+        <div class="photo-placeholder"></div>
+        <h3>Filler Name 6</h3>
+        <p>Team Member</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <!-- Meet the Team -->
-            <section class="team">
-              <h3 class="team-heading">Meet the Team</h3>
-              <div class="team-grid">
-                <div class="team-card">
-                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 1">
-                  <div class="team-name">Filler Name 1</div>
-                  <div class="team-role">Team Member</div>
-                </div>
-                <div class="team-card">
-                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 2">
-                  <div class="team-name">Filler Name 2</div>
-                  <div class="team-role">Team Member</div>
-                </div>
-                <div class="team-card">
-                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 3">
-                  <div class="team-name">Filler Name 3</div>
-                  <div class="team-role">Team Member</div>
-                </div>
-                <div class="team-card">
-                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 4">
-                  <div class="team-name">Filler Name 4</div>
-                  <div class="team-role">Team Member</div>
-                </div>
-                <div class="team-card">
-                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 5">
-                  <div class="team-name">Filler Name 5</div>
-                  <div class="team-role">Team Member</div>
-                </div>
-                <div class="team-card">
-                  <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="Team Member 6">
-                  <div class="team-name">Filler Name 6</div>
-                  <div class="team-role">Team Member</div>
-                </div>
-              </div>
-            </section>
-          </header>
-        </article>
+<style>
+/* Match header spacing with Labs section */
+#home .content-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px; /* matches Labs top spacing */
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0; /* no extra gap */
+  margin-bottom: 10px; /* space before subtitle */
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px; /* equal spacing before gold line */
+}
+
+.gold-divider {
+  border: none;
+  height: 3px;
+  background-color: #FFD100;
+  margin: 20px 0; /* equal space above/below line */
+}
+
+.subsection-title {
+  font-size: 1.5rem; /* matches 'Sewing Lab' font size */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.photo-placeholder {
+  width: 150px;
+  height: 150px;
+  border: 4px solid #FFD100;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.team-member h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.team-member p {
+  margin: 0;
+  color: #777;
+}
+</style>
 
         <!-- Labs -->
         <article id="labs" class="panel">
