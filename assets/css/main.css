@@ -2371,3 +2371,30 @@ body {
   max-width: 240px;
   width: 100%;
 }
+/* === Fix: panels should expand with content (no clipping) === */
+#main { overflow: visible !important; }
+#main > .panel {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Add a touch more top/bottom padding so content never feels cut */
+.panel.intro.fidm-hero { padding-top: 3.5rem !important; padding-bottom: 3rem !important; }
+
+/* === Fix: team photos must be perfect circles, not full-width === */
+.fidm-hero .team-card img {
+  width: 128px !important;
+  height: 128px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 auto .6rem !important;
+  border: 3px solid #ffcb05 !important;
+}
+
+/* In case a global rule is forcing all images to 100% width, neutralize it inside team cards */
+.fidm-hero .team-card img,
+.fidm-hero .team-card .image img {
+  max-width: none !important;
+}
