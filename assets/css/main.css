@@ -2276,3 +2276,43 @@ body {
 
 /* Helper */
 .center { text-align: center; }
+/* === Home (Hero): thicker gold rule + tidy spacing === */
+
+/* Title → subheader spacing */
+.fidm-hero .hero-title { margin-bottom: .5rem; }
+
+/* Subheader → gold line spacing */
+.fidm-hero .hero-sub { margin-bottom: 1.5rem; }
+
+/* Gold separator: full width, a bit thicker */
+.fidm-hero .hr-gold{
+  width: 100%;
+  height: 3px;                 /* thicker line to match other sections */
+  background: #ffcb05;
+  border-radius: 0;
+  margin: 0 0 2rem 0;          /* gold line → 'Meet the Team' spacing */
+}
+
+/* 'Meet the Team' heading → grid spacing */
+.fidm-hero .team .team-heading{ margin: 0 0 1.25rem 0; }
+
+/* Team grid: exactly 3x2 on desktop */
+.fidm-hero .team-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem 1.5rem;            /* vertical, horizontal */
+  justify-items: center;
+}
+@media (max-width: 980px){
+  .fidm-hero .team-grid{
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 560px){
+  .fidm-hero .team-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
