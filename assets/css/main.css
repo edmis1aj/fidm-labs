@@ -2622,3 +2622,49 @@ body {
   border-radius: 0 !important;
   margin: 1.5rem 0 !important;   /* slightly more room above & below */
 }
+/* 1) bring the "FIDM Labs" header closer to the top of the white panel */
+.panel.intro.fidm-hero{
+  padding-top: 0.85rem !important;   /* was 1.25–2rem; now matches other panels more closely */
+}
+
+/* 2) more breathing room around the gold rule (applies to ALL sections) */
+.hr-gold{
+  width: 100% !important;
+  height: 3px !important;
+  background: #ffcb05 !important;
+  border-radius: 0 !important;
+  margin: 1.75rem 0 !important;      /* slightly more space above & below */
+}
+
+/* 3) make "Meet the Team" match the subheaders like "Sewing Lab" */
+.fidm-hero .team-heading{
+  /* mirror the template’s h3 look */
+  font-size: 1.35em !important;      /* same scale as other section h3s */
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #2a2a2a !important;
+  margin: 0 0 1.1rem 0 !important;   /* consistent gap before the grid */
+}
+
+/* keep the team grid as we planned (3 → 2 → 1) */
+.fidm-hero .team-grid{
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0,1fr)) !important;
+  grid-template-rows: repeat(2, auto) !important;
+  gap: 2rem 1.5rem !important;
+  justify-items: center;
+}
+@media (max-width: 980px){
+  .fidm-hero .team-grid{
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+    grid-template-rows: auto !important;
+  }
+}
+@media (max-width: 560px){
+  .fidm-hero .team-grid{
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+}
