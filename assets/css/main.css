@@ -2597,3 +2597,28 @@ body {
   border-radius:0 !important;
   margin:1.25rem 0 !important;
 }
+/* 1) HOME: move header up so it matches other sections */
+.panel.intro.fidm-hero{
+  padding-top: 1.25rem !important;   /* was 2rem */
+}
+
+/* 2) HOME: make "Meet the Team" use the same h3 styling as other sections */
+.fidm-hero .team-heading{
+  /* inherit the default .panel h3 styles */
+  font-size: 1.35em !important;   /* matches Astral's h3 scale */
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #2a2a2a !important;
+  margin: 0 0 1.25rem 0 !important;   /* consistent gap to the grid */
+}
+
+/* 3) GLOBAL: more space around the gold horizontal rule (all sections) */
+.hr-gold{
+  width: 100% !important;
+  height: 3px !important;
+  background: #ffcb05 !important;
+  border-radius: 0 !important;
+  margin: 1.5rem 0 !important;   /* slightly more room above & below */
+}
