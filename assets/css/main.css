@@ -2316,3 +2316,58 @@ body {
     grid-template-rows: auto;
   }
 }
+/* === Fix Home/Hero layout being split into two columns === */
+
+/* 1) Make the hero header stack vertically (no columns) */
+.fidm-hero > header{
+  display: block !important;
+  grid-template-columns: none !important;  /* override any previous grid */
+}
+
+/* 2) Ensure the team section sits UNDER the header, full width */
+.fidm-hero > header .team{
+  display: block !important;
+  width: 100% !important;
+  margin-top: 0;
+}
+
+/* 3) Give the hero panel a little more top breathing room (prevents “cut off” look) */
+.fidm-hero{
+  padding-top: 3.5rem !important;
+}
+
+/* 4) Gold separator: full-width and thicker */
+.fidm-hero .hr-gold{
+  width: 100% !important;
+  height: 3px;
+  background: #ffcb05;
+  border-radius: 0;
+  margin: 0 0 2rem 0;   /* space before "Meet the Team" */
+}
+
+/* 5) Team grid: exactly 3 x 2 on desktop, responsive below */
+.fidm-hero .team-grid{
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0,1fr)) !important;
+  grid-template-rows: repeat(2, auto) !important;
+  gap: 2rem 1.5rem;
+  justify-items: center;
+}
+@media (max-width: 980px){
+  .fidm-hero .team-grid{
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+    grid-template-rows: auto !important;
+  }
+}
+@media (max-width: 560px){
+  .fidm-hero .team-grid{
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+}
+
+/* 6) Keep card width comfortable so the grid doesn't squish */
+.fidm-hero .team-card{
+  max-width: 240px;
+  width: 100%;
+}
