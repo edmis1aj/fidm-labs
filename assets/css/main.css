@@ -2513,3 +2513,87 @@ body {
   margin: 0 auto .6rem !important;
   border: 3px solid #ffcb05 !important;
 }
+/* === HOME (Hero) – structure & spacing === */
+
+/* Let panels grow (avoid clipping) */
+#main { overflow: visible !important; }
+#main > .panel {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Home panel padding to match other sections */
+.panel.intro.fidm-hero{
+  padding-top: 2rem !important;
+  padding-bottom: 2.25rem !important;
+}
+
+/* Stack hero content; ensure team sits below header */
+.fidm-hero > header{ display:block !important; }
+.fidm-hero > header .team{ width:100% !important; }
+
+/* Title & subheader */
+.fidm-hero .hero-title{ margin: 0 0 .5rem 0; }
+.fidm-hero .hero-sub{ margin: 0 0 1.25rem 0 !important; color:#6b6b6b; max-width:48ch; }
+
+/* Full-width gold divider with equal spacing */
+.fidm-hero .hr-gold{
+  width:100% !important;
+  height:3px;
+  background:#ffcb05;
+  border-radius:0;
+  margin:1.25rem 0 !important; /* equal space above/below */
+}
+
+/* "Meet the Team" matches other section titles (e.g., Sewing Lab) */
+.fidm-hero .team-heading{
+  font-size:1.75em !important;
+  font-weight:700 !important;
+  line-height:1.2 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  color:#2a2a2a !important;
+  margin:0 0 1.25rem 0 !important;
+}
+
+/* Team grid: desktop 3x2 → tablet 2x? → mobile 1x? */
+.fidm-hero .team-grid{
+  display:grid !important;
+  grid-template-columns:repeat(3, minmax(0,1fr)) !important;
+  grid-template-rows:repeat(2, auto) !important;   /* ensures 2 rows on desktop */
+  gap:2rem 1.5rem !important;
+  justify-items:center;
+}
+@media (max-width:980px){
+  .fidm-hero .team-grid{
+    grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+    grid-template-rows:auto !important;
+  }
+}
+@media (max-width:560px){
+  .fidm-hero .team-grid{
+    grid-template-columns:1fr !important;
+    grid-template-rows:auto !important;
+  }
+}
+
+/* Team cards + circular photos */
+.fidm-hero .team-card{ max-width:240px; width:100%; text-align:center; }
+.fidm-hero .team-card img{
+  width:128px !important; height:128px !important;
+  border-radius:50% !important; object-fit:cover !important;
+  display:block !important; margin:0 auto .6rem !important;
+  border:3px solid #ffcb05 !important;
+}
+.fidm-hero .team-name{ font-weight:700; color:#2a2a2a; }
+.fidm-hero .team-role{ color:#777; font-size:.95rem; }
+
+/* === GLOBAL – match Home’s gold divider site-wide === */
+.hr-gold{
+  width:100% !important;
+  height:3px !important;
+  background:#ffcb05 !important;
+  border-radius:0 !important;
+  margin:1.25rem 0 !important;
+}
