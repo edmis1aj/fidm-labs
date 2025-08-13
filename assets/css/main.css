@@ -2693,3 +2693,15 @@ body {
 .hr-gold {
   margin: 1.25rem 0 !important;               /* equal above & below */
 }
+/* === Tweak: align Home header top spacing to Labs === */
+#home.fidm-hero > header{
+  padding-top: 2.6rem !important;   /* bring it down slightly from the top */
+  padding-right: 2.5rem !important;
+  padding-bottom: 2.25rem !important;
+  padding-left: 2.5rem !important;
+}
+
+/* Ensure the H1 itself isn’t adding extra top gap */
+#home.fidm-hero .hero-title{
+  margin-top: 0 !important;
+}
