@@ -2705,3 +2705,85 @@ body {
 #home.fidm-hero .hero-title{
   margin-top: 0 !important;
 }
+/* === 1) UNIFY HEADER PADDING FOR ALL PANELS === */
+#main > .panel > header{
+  /* choose a single padding that matches your Labs look */
+  padding: 2.75rem 2.5rem 1.5rem 2.5rem !important;
+}
+
+/* Home header should simply inherit the same padding (remove one-offs) */
+#home.fidm-hero > header{
+  padding: inherit !important;
+}
+
+/* Remove extra top/bottom padding from the whole Home panel itself */
+.panel.intro.fidm-hero{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Let panels grow (no clipping) */
+#main { overflow: visible !important; }
+#main > .panel{
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* === 2) GOLD DIVIDER — same everywhere (match Home’s full-width style) === */
+.hr-gold{
+  width: 100% !important;
+  height: 3px !important;
+  background: #ffcb05 !important;
+  border-radius: 0 !important;
+  margin: 1.75rem 0 !important;  /* more balanced air above & below */
+}
+
+/* === 3) HOME — headings & team grid === */
+
+/* H1 + subheader spacing inside Home header */
+#home .hero-title{ margin: 0 0 .5rem 0 !important; }
+#home .hero-sub{ margin: 0 !important; }  /* the line’s margin provides the breathing room */
+
+/* Make "Meet the Team" match other section h3s (e.g., Sewing Lab) */
+#home .team-heading{
+  font-size: 1.35em !important;      /* Astral h3 scale */
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #2a2a2a !important;
+  margin: 0 0 1.25rem 0 !important;
+}
+
+/* Team grid: desktop 3x2 → tablet 2 → mobile 1 */
+#home .team-grid{
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0,1fr)) !important;
+  grid-template-rows: repeat(2, auto) !important;
+  gap: 2rem 1.5rem !important;
+  justify-items: center;
+}
+@media (max-width: 980px){
+  #home .team-grid{
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+    grid-template-rows: auto !important;
+  }
+}
+@media (max-width: 560px){
+  #home .team-grid{
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+}
+
+/* Make sure the team photos are perfectly circular */
+#home .team-card img{
+  width: 128px !important;
+  height: 128px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 auto .6rem !important;
+  border: 3px solid #ffcb05 !important;
+}
