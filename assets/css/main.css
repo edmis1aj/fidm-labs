@@ -2809,3 +2809,16 @@ body {
 .hr-gold{
   margin: 1.5rem 0 !important;   /* equal space above and below */
 }
+/* --- Equalize ALL header positions, including Home --- */
+#main > .panel > header,
+#home.fidm-hero > header {
+  padding-top: 3rem !important;    /* match Labs section height */
+  padding-right: 2.5rem !important;
+  padding-bottom: 1.4rem !important;
+  padding-left: 2.5rem !important;
+}
+
+#main > .panel > header h1,
+#main > .panel > header h2 {
+  margin-top: 0 !important;
+}
