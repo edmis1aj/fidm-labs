@@ -2787,3 +2787,25 @@ body {
   margin: 0 auto .6rem !important;
   border: 3px solid #ffcb05 !important;
 }
+/* === Uniform header spacing across ALL panels (incl. Home) === */
+#main > .panel > header{
+  /* tighter and consistent than the Astral defaults */
+  padding-top: 1.85rem !important;   /* ← adjust this single number up/down to taste */
+  padding-right: 2.5rem !important;
+  padding-bottom: 1.4rem !important;
+  padding-left: 2.5rem !important;
+}
+
+/* Home header uses the same spacing (no special cases) */
+#home.fidm-hero > header{ padding: inherit !important; }
+
+/* Remove accidental extra top gap coming from headings themselves */
+#main > .panel > header h1,
+#main > .panel > header h2{
+  margin-top: 0 !important;
+}
+
+/* Keep the gold divider spacing balanced (already set, but reaffirm) */
+.hr-gold{
+  margin: 1.5rem 0 !important;   /* equal space above and below */
+}
