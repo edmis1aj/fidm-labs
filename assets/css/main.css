@@ -2668,3 +2668,28 @@ body {
     grid-template-rows: auto !important;
   }
 }
+/* === FIDM: Home panel fixes === */
+
+/* Bring the home header higher + remove the big default intro padding */
+#home.fidm-hero { 
+  height: auto !important;                    /* override the fixed intro height */
+}
+#home.fidm-hero > header { 
+  padding: 2rem 2.5rem !important;            /* tighter, like other sections */
+}
+
+/* Make "Meet the Team" match other section h3s (e.g., Sewing Lab) */
+#home.fidm-hero .team-heading {
+  font-size: 1.25em !important;               /* same as template h3 */
+  font-weight: 400 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.015em !important;
+  text-transform: none !important;
+  color: #363636 !important;
+  margin: 0 0 1.25rem 0 !important;           /* consistent gap above the grid */
+}
+
+/* Give the gold rule equal breathing room (keep the long line) */
+.hr-gold {
+  margin: 1.25rem 0 !important;               /* equal above & below */
+}
