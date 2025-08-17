@@ -2824,3 +2824,69 @@ body {
 #main > .panel > header h2 {
   margin-top: 0 !important;
 }
+/* === Uniform header spacing across ALL panels (incl. Home) === */
+#main > article.panel > header {
+  padding-top: 2.6rem !important;
+  padding-right: 2.5rem !important;
+  padding-bottom: 1.4rem !important;
+  padding-left: 2.5rem !important;
+}
+
+/* Home header uses the SAME spacing */
+#home.panel.fidm-hero > header {
+  padding-top: 2.6rem !important;
+  padding-right: 2.5rem !important;
+  padding-bottom: 1.4rem !important;
+  padding-left: 2.5rem !important;
+}
+
+/* Remove stray top margins inside headers */
+#main > article.panel > header h1,
+#main > article.panel > header h2 {
+  margin-top: 0 !important;
+}
+
+/* Gold divider: full width, equal spacing (applies everywhere) */
+.hr-gold {
+  width: 100% !important;
+  height: 3px !important;
+  background: #ffcb05 !important;
+  border-radius: 0 !important;
+  margin: 1.6rem 0 !important;  /* equal space above & below */
+}
+
+/* Home: "Meet the Team" should match section h3 (e.g., Sewing Lab) */
+#home .team-heading {
+  font-size: 1.35em !important;  /* Astral h3 scale */
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #2a2a2a !important;
+  margin: 0 0 1.25rem 0 !important;
+}
+
+/* Prevent clipping and keep Home layout stacked */
+#main { overflow: visible !important; }
+#main > article.panel { height: auto !important; max-height: none !important; overflow: visible !important; }
+
+/* Team grid + circular photos (for completeness) */
+#home .team-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0,1fr)) !important;
+  grid-template-rows: repeat(2, auto) !important;
+  gap: 2rem 1.5rem !important;
+  justify-items: center;
+}
+@media (max-width: 980px) {
+  #home .team-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; grid-template-rows: auto !important; }
+}
+@media (max-width: 560px) {
+  #home .team-grid { grid-template-columns: 1fr !important; grid-template-rows: auto !important; }
+}
+#home .team-card img {
+  width: 128px !important; height: 128px !important;
+  border-radius: 50% !important; object-fit: cover !important;
+  display: block !important; margin: 0 auto .6rem !important;
+  border: 3px solid #ffcb05 !important;
+}
