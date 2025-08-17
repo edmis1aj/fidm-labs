@@ -2890,3 +2890,21 @@ body {
   display: block !important; margin: 0 auto .6rem !important;
   border: 3px solid #ffcb05 !important;
 }
+/* === Align all NON-Home headers to match Home's top position === */
+#main > article.panel:not(#home) > header{
+  padding-top: 2.6rem !important;   /* match Home's current top spacing */
+  padding-right: 2.5rem !important;
+  padding-bottom: 1.4rem !important;
+  padding-left: 2.5rem !important;
+}
+
+/* Remove any stray top margin on the section title itself */
+#main > article.panel:not(#home) > header h1,
+#main > article.panel:not(#home) > header h2{
+  margin-top: 0 !important;
+}
+
+/* Keep the gold divider spacing consistent in non-Home sections */
+#main > article.panel:not(#home) .hr-gold{
+  margin: 1.6rem 0 !important;   /* equal space above & below */
+}
