@@ -1,6 +1,10 @@
 body {
   outline: 5px solid red !important;
 }
+
+body {
+  outline: 5px solid red !important;
+}
 body {
     background: linear-gradient(135deg, #6a0032, #4b0026);
     color: white;
