@@ -16,15 +16,34 @@
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 <style>
-  #main > article.panel > header {
-    padding-top: 10rem !important;
+  /* Remove Astral’s extra panel bump (keep this) */
+  #main > article.panel { padding-top: 0 !important; }
+
+  /* 1) Lock Home at its current position (baseline) */
+  #home.panel > header {
+    padding-top: 2.6rem !important;
+    padding-right: 2.5rem !important;
     padding-bottom: 1.4rem !important;
     padding-left: 2.5rem !important;
+    outline: 2px dashed rgba(0, 200, 255, .35); /* TEMP: cyan guide */
+  }
+
+  /* 2) Raise the OTHER panels to match Home by using a SMALLER top padding */
+  #main > article.panel:not(#home) > header,
+  #main > article.panel:not(#home) > header.major {
+    padding-top: 2.0rem !important;  /* start here; adjust by ±0.2rem until it matches Home */
     padding-right: 2.5rem !important;
-    outline: 4px dashed red;
+    padding-bottom: 1.4rem !important;
+    padding-left: 2.5rem !important;
+    outline: 2px dashed rgba(255, 215, 0, .5); /* TEMP: gold guide */
+  }
+
+  /* Make sure headings themselves aren’t adding extra top margin */
+  #main > article.panel > header h1,
+  #main > article.panel > header h2 {
+    margin-top: 0 !important;
   }
 </style>
-
 
   </head>
   <body class="is-preload">
