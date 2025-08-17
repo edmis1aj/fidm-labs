@@ -15,14 +15,19 @@
     <!-- Font Awesome that ships with Astral -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-  /* FORCE all panel headers to the same top padding (matches Home) */
+<style>
+  /* Target ALL panel headers consistently */
   #main > article.panel > header {
-    padding-top: 2.6rem !important;   /* adjust this single number if needed */
-    padding-right: 2.5rem !important;
+    padding-top: 2.6rem !important;
     padding-bottom: 1.4rem !important;
     padding-left: 2.5rem !important;
-    outline: 2px dashed rgba(255, 215, 0, .5); /* TEMP: visual proof */
+    padding-right: 2.5rem !important;
+    outline: 2px dashed rgba(255, 215, 0, .5);
+  }
+
+  /* Remove Astral’s default vertical spacing on panels */
+  #main > article.panel {
+    padding-top: 0 !important;  /* cancel the extra bump */
   }
 </style>
 
